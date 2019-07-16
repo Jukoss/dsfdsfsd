@@ -12,57 +12,54 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+# Seven West Media front-end tech challenge
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Introduction
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+This is desgined to be a light-weight test to assess code style and knowledge of JavaScript and React features.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You'll need to build a list of posts, that's both sortable and filterable (criteria below). Data sources are supplied as
+JSON files, and can be imported into, or directly included in a project file.
 
-### `npm run eject`
+### Task notes:
+- There's no scoring criteria, nor are there any "wrong answers", so long as the tasks are completed as described.
+- If you get stuck on a point, that's OK.
+- If you see areas where the project could be improved in future, make comments in either a TODO.md file, or inline.
+- Add comments where you feel they're necessary.
+- Ask questions about the task if you have any.
+- Use online references if you would like.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Estimated time to completion 2-4 hours - but take as long as you need.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Tasks
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Use Facebook's CRA to create a React project, and don't add any additional dependencies -
+https://github.com/facebookincubator/create-react-app
+2. Use the supplied `posts.json` and `users.json` files as data sources, and manipulate them as needed. These can be
+imported into the project, or added directly.
+3. Use this pen as a design reference -
+https://codepen.io/ktv18/pen/zzRaEx
+    - You may copy CSS/HTML from the pen, but it doesn't matter if your styles and elements don't match exactly.
+    - The visual structure should remain the same.
+    - Create as many components as you think are necessary, however, at minimum the the list of posts and posts must be
+    separate components.
+3. Implement the two filters, populating the options from the JSON data (not hard-coded):
+    - City name
+    - Company name
+4. Implement sorting, allowing for sorting by:
+    - Author name
+    - City name
+    - Company name
+5. Implement functionality to search for posts by title
+6. Implement functionality to delete posts
+7. Ensure that the first letter of each post's title and body are capitalised.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## For discussion
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+We will discuss the following with you after reviewing your implementation, but do not add these features as they are
+not required:
+1. What else could you do with the available data?
+2. What considerations should you give to the component lifecycle?
+3. How could the list of posts be animated when sorting and filtering?
