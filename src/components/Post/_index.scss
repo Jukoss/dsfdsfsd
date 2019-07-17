@@ -1,0 +1,29 @@
+
+
+.post {
+    color: white;
+    background: #363795;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 15px 50px 15px 15px;
+
+    &-title {
+        &:first-letter {
+            text-transform: uppercase;
+        }
+        margin-bottom: 15px;
+    }
+
+    &-body {
+        &:first-letter {
+            text-transform: uppercase;
+        }
+        margin-top: 15px;
+    }
+
+    button {
+        position: absolute;
+        top: .5em;
+        right: .5em;
+    }
+}
